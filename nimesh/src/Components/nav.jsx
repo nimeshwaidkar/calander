@@ -2,7 +2,13 @@ import React from "react";
 import "../Components/nav.css";
 import ing from "../assets/image.png";
 import lig from "../assets/image copy.png";
-import pig from "../assets/image copy 2.png";
+import pig from "../assets/image copy 2.png"; 
+import mig from "../assets/img-1-2.jpg"; 
+import gig from "../assets/img-1-3.jpg"; 
+import cig from "../assets/img-1-4.jpg"; 
+import big from "../assets/img-1-5.jpg";
+import fig from "../assets/img-1-6.jpg";      
+
 
 export default function nav() {
   return (
@@ -174,15 +180,17 @@ export default function nav() {
         <div className="oii"><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla...</p></div>
       </div>
       <div className="button10">
-        <div><button className="button1">Branding</button></div>
-        <div><button className="button1">Development</button></div>
-        <div><button className="button1">Animation</button></div>
-        <div><button className="button1">Your Experience</button></div>
-        <div><button className="button1">Social Network</button></div>
-        <div><button className="button1">Marketing</button></div>
+        <div><button className="button1" onClick= "showTab('tab1')">Branding</button></div>
+        <div><button className="button1" onClick= "showTab('tab2')">Development</button></div>
+        <div><button className="button1" onClick= "showTab('tab3')">Animation</button></div>
+        <div><button className="button1" onClick= "showTab('tab4')">Your Experience</button></div>
+        <div><button className="button1" onClick= "showTab( 'tab5')">Social Network</button></div>
+        <div><button className="button1" onClick= "showTab( 'tab6')">Marketing</button></div>
       </div>
       <div className="moin">
-        <div className="container">
+
+        <div id="tab1" className=" tabcontainer">
+        <div className="hmm">
           <div className="jagh">
             <div className="heading"><h5>Optimize and scale, easy to start</h5></div>
             <div className="para">Lorem ipsum dolor sit amet consectetur
@@ -193,6 +201,81 @@ export default function nav() {
           </div>
           <div ><img className="ninja" src={pig} alt="" /></div>
         </div>
+        </div>
+
+        <div id="tab2"className=" tabcontainer">
+        <div className="hmm">
+          <div className="jagh">
+            <div className="heading"><h5>Design Studios That Everyone Should Know</h5></div>
+            <div className="para">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nam possimus excepturi molestiae minima harum,
+              at impedit aliquam facere error maiores quibusdam delectus? Quasi unde qui
+              repellendus magni, fugiat consequuntur libero.</div>
+            <div><a className="boiton" href="">learn more ➡</a></div>
+          </div>
+          <div ><img className="ninja" src={mig} alt="" /></div>
+        </div>
+        </div>
+
+        <div id="tab3"className=" tabcontainer">
+        <div className="hmm">
+          <div className="jagh">
+            <div className="heading"><h5>We can blend colors multiple ways</h5></div>
+            <div className="para">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nam possimus excepturi molestiae minima harum,
+              at impedit aliquam facere error maiores quibusdam delectus? Quasi unde qui
+              repellendus magni, fugiat consequuntur libero.</div>
+            <div><a className="boiton" href="">learn more ➡</a></div>
+          </div>
+          <div ><img className="ninja" src={gig} alt="" /></div>
+        </div>
+        </div>
+
+        <div id="tab4"className=" tabcontainer">
+        <div className="hmm">
+          <div className="jagh">
+            <div className="heading"><h5>Choose The Best Plan That's For You</h5></div>
+            <div className="para">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nam possimus excepturi molestiae minima harum,
+              at impedit aliquam facere error maiores quibusdam delectus? Quasi unde qui
+              repellendus magni, fugiat consequuntur libero.</div>
+            <div><a className="boiton" href="">learn more ➡</a></div>
+          </div>
+          <div ><img className="ninja" src={cig} alt="" /></div>
+        </div>
+        </div>
+
+        <div id="tab5" className=" tabcontainer">
+        <div className="hmm">
+          <div className="jagh">
+            <div className="heading"><h5>Subscribe our newsletter to get gift</h5></div>
+            <div className="para">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nam possimus excepturi molestiae minima harum,
+              at impedit aliquam facere error maiores quibusdam delectus? Quasi unde qui
+              repellendus magni, fugiat consequuntur libero.</div>
+            <div><a className="boiton" href="">learn more ➡</a></div>
+          </div>
+          <div ><img className="ninja" src={big} alt="" /></div>
+        </div>
+        </div>
+
+        <div id="tab6" className=" tabcontainer">
+          <div className="hmm">
+          <div className="jagh">
+            <div className="heading"><h5>Ready to get started? Create and Account</h5></div>
+            <div className="para">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nam possimus excepturi molestiae minima harum,
+              at impedit aliquam facere error maiores quibusdam delectus? Quasi unde qui
+              repellendus magni, fugiat consequuntur libero.</div>
+            <div><a className="boiton" href="">learn more ➡</a></div>
+          </div>
+          <div ><img className="ninja" src={fig} alt="" /></div>
+        </div>
+        </div>
+        
+
+
+
       </div>
       <div className="cont2">
         <div className="part1">
@@ -205,6 +288,8 @@ export default function nav() {
         </div>
 
       </div>
+     
+      
     </>
   );
 }
